@@ -19,7 +19,7 @@
  *
  * and then a call like this:
  *
- *     [myArray chunkifyWithMaxSize:3];
+ *     [myArray fs_chunkifyWithMaxSize:3];
  *
  * will return sth like this:
  *
