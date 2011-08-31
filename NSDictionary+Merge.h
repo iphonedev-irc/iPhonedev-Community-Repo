@@ -1,0 +1,25 @@
+//
+//  NSDictionary+Merge.h
+//  FSKit
+//
+//  Created by Christopher Miller on 8/1/11.
+//  Copyright 2011 FSDEV. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+/**
+ * Small utility to merge an `NSDictionary` into an existing `NSDictionary`.
+ */
+@interface NSDictionary (Merge)
+
+/**
+ * Merges this dictionary with another dictionary.
+ * 
+ * @warning Any duplicate entries in `self` will be overwritten by the entries in `aDict`.
+ *
+ * @param aDict The `NSDictionary` to be merged into a mutable copy of `self` to create a new `NSDictionary`.
+ */
+- (NSDictionary *)dictionaryByMergingDictionary:(NSDictionary *)aDict;
+
+@end
