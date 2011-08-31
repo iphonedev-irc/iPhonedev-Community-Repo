@@ -1,4 +1,4 @@
-# Toolbox
+# Categories
 
 A collection of categories on commonly used Cocoa classes that can make life a little easier.
 
@@ -6,4 +6,4 @@ All work remains property of its original Author. Please see COPYING.md for more
 
 ## Who Owns This Code?
 
-* `fs_` Comes from Chris Miller (NSError)
+* `fs_` Chris Miller (NSError)

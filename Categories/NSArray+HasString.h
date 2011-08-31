@@ -10,6 +10,9 @@
 
 @interface NSArray (HasString)
 
+/**
+ * Go over the whole array with `isEqualToString:` and return `YES` at the first instance of `sz` in the receiver.
+ */
 - (BOOL)fs_hasString:(NSString *)sz;
 
 @end

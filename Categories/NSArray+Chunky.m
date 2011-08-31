@@ -14,21 +14,21 @@
 {
     /* Thanks @sethwillits! (https://gist.github.com/1157820, https://twitter.com/sethwillits/status/104641659681255424) */
     NSUInteger numFullChunks = (self.count / size);
-	NSUInteger remainder = (self.count % size);
-	NSArray ** chunks = malloc(sizeof(NSArray *) * (numFullChunks + 1));
-	NSArray * result = nil;
+    NSUInteger remainder = (self.count % size);
+    NSArray ** chunks = malloc(sizeof(NSArray *) * (numFullChunks + 1));
+    NSArray * result = nil;
     
-	for (NSUInteger i = 0; i < numFullChunks; i++) {
-		chunks[i] = [self subarrayWithRange:NSMakeRange(i * size, size)];
-	}
+    for (NSUInteger i = 0; i < numFullChunks; i++) {
+        chunks[i] = [self subarrayWithRange:NSMakeRange(i * size, size)];
+    }
     
-	if (remainder) {
-		chunks[numFullChunks] = [self subarrayWithRange:NSMakeRange(numFullChunks * size, remainder)];
-	}
+    if (remainder) {
+        chunks[numFullChunks] = [self subarrayWithRange:NSMakeRange(numFullChunks * size, remainder)];
+    }
     
-	result = [NSArray arrayWithObjects:chunks count:(remainder ? (numFullChunks + 1) : numFullChunks)];
-	free(chunks);
-	return result;
+    result = [NSArray arrayWithObjects:chunks count:(remainder ? (numFullChunks + 1) : numFullChunks)];
+    free(chunks);
+    return result;
 }
 
 @end
