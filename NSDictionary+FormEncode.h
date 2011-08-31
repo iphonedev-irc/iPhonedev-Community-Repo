@@ -27,6 +27,6 @@
  *
  * The question mark (`?`) will not be prepended, and no URL-encoding will take place, either. If you need URL-encoding, I would suggest iterating over the reciever beforehand and using `NSString`'s URL encoding feature.
  */
-- (NSString *)formEncodedString;
+- (NSString *)fs_formEncodedString;
 
 @end

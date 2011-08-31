@@ -10,7 +10,7 @@
 
 @implementation NSArray (Chunky)
 
-- (NSArray *)chunkifyWithMaxSize:(NSUInteger)size
+- (NSArray *)fs_chunkifyWithMaxSize:(NSUInteger)size
 {
     /* Thanks @sethwillits! (https://gist.github.com/1157820, https://twitter.com/sethwillits/status/104641659681255424) */
     NSUInteger numFullChunks = (self.count / size);

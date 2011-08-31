@@ -10,7 +10,7 @@
 
 @implementation NSArray (HasString)
 
-- (BOOL)hasString:(NSString *)sz
+- (BOOL)fs_hasString:(NSString *)sz
 {
     return [self indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
         if ([obj isEqualToString:sz]) return YES;

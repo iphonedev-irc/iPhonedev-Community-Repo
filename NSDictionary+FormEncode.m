@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (FormEncode)
 
-- (NSString *)formEncodedString
+- (NSString *)fs_formEncodedString
 {
     if ([[self allKeys] count] == 0)
         return @"";

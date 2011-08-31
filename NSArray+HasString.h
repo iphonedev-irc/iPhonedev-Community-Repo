@@ -10,6 +10,6 @@
 
 @interface NSArray (HasString)
 
-- (BOOL)hasString:(NSString *)sz;
+- (BOOL)fs_hasString:(NSString *)sz;
 
 @end
