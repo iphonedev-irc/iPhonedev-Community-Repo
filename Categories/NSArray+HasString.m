@@ -13,8 +13,8 @@
 - (BOOL)fs_hasString:(NSString *)sz
 {
     return [self indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-																			        	if ([obj isEqualToString:sz]) return YES;
-																				        else                          return NO ;
+                                                                                        if ([obj isEqualToString:sz]) return YES;
+                                                                                        else                          return NO ;
                                                                                     }] != NSNotFound;
 }
 
